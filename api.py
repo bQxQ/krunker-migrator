@@ -21,7 +21,7 @@ def grab(txt):
  for n in nums:
   if not n.startswith(('19','20','000')) and n not in ['123456','000000','111111','222222','333333','444444','555555','666666','777777','888888','999999'] and len(set(n))>1:return n
 
-class E:                                      # add ur proxies here if u dont want ratelimit (u can do proxyless)
+class E:                                      # add ur proxy here if u dont want ratelimit (u can do proxyless)
  def __init__(s): s.s=requests.Session();px="# PROXY HERE";s.s.proxies.update({"http":f"http://{px}","https":f"http://{px}"});li(f"Proxy {px}")
  def new(s):
   try:
